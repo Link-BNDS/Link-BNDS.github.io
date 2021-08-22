@@ -17,10 +17,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #f0f0f0;
-  --highlight-foreground: #444;
-  --highlight-gutter-background: #dedede;
-  --highlight-gutter-foreground: #555;
+  --highlight-background: #282b2e;
+  --highlight-foreground: #a9b7c6;
+  --highlight-gutter-background: #34393d;
+  --highlight-gutter-foreground: #9ca9b6;
 }
 html {
   line-height: 1.15; /* 1 */
@@ -360,96 +360,63 @@ td {
   transform: rotate(-45deg);
 }
 /*
-
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
+Date: 24 Fev 2015
+Author: Pedro Oliveira <kanytu@gmail . com>
 */
 
 .hljs {
+  color: #a9b7c6;
+  background: #282b2e;
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #F0F0F0;
 }
 
-
-/* Base color: saturation 0; */
-
-.hljs,
-.hljs-subst {
-  color: #444;
-}
-
-.hljs-comment {
-  color: #888888;
+.hljs-number,
+.hljs-literal,
+.hljs-symbol,
+.hljs-bullet {
+  color: #6897BB;
 }
 
 .hljs-keyword,
-.hljs-attribute,
 .hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold;
-}
-
-
-/* User color: hue: 0 */
-
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
 .hljs-deletion {
-  color: #880000;
+  color: #cc7832;
 }
 
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold;
-}
-
-.hljs-regexp,
-.hljs-symbol,
 .hljs-variable,
 .hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #BC6060;
+.hljs-link {
+  color: #629755;
 }
 
-
-/* Language color: hue: 90; */
-
-.hljs-literal {
-  color: #78A960;
+.hljs-comment,
+.hljs-quote {
+  color: #808080;
 }
-
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300;
-}
-
-
-/* Meta color: hue: 200 */
 
 .hljs-meta {
-  color: #1f7199;
+  color: #bbb529;
 }
 
-.hljs-meta-string {
-  color: #4d99bf;
+.hljs-string,
+.hljs-attribute,
+.hljs-addition {
+  color: #6A8759;
 }
 
+.hljs-section,
+.hljs-title,
+.hljs-type {
+  color: #ffc66d;
+}
 
-/* Misc effects */
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #e8bf6a;
+}
 
 .hljs-emphasis {
   font-style: italic;
@@ -1326,6 +1293,11 @@ pre code {
   border: 1px solid #eee;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
 }
 .site-author-name {
   color: var(--text-color);
@@ -2132,6 +2104,13 @@ pre code {
 }
 .post-block:last-of-type .post-eof {
   display: none;
+}
+.post-copyright ul {
+  list-style: none;
+  padding: 0.5em 1em;
+  background: var(--card-bg-color);
+  border-left: 3px solid #ff2a2a;
+  margin: 1em 0 0;
 }
 .post-tags {
   margin-top: 40px;
