@@ -9,9 +9,9 @@
   <entry>
     <title>my_first_LaTeX_homework</title>
     <url>/my-first-LaTeX-homework/</url>
-    <content><![CDATA[<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>I heard about LaTeX from Ben. He told me our school’s previous Calculus 3 teacher stipulated that students in his class must use LaTeX to write their homework. One of Ben’s friends, a senior student going to study at Duke University, told Ben that LaTeX benefits him a lot. At the beginning of summer vacation, I started to learn some basic knowledge about LaTeX. Thanks to my C++ knowledge, I have learned some of the rudimentary knowledge about LaTeX. However, if some complex demands appear, I could only use it as a Google-based language(LOL).<br>This is my AP Statistics Course Summer Homework. Made by LaTeX, edited by VS code.  </p>
+    <content><![CDATA[<h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>I heard about LaTeX from Ben. He told me our school’s previous Calculus 3 teacher stipulated that students in his class must use LaTeX to write their homework.  At the beginning of summer vacation, I started to learn some basic knowledge about LaTeX. Thanks to my C++ knowledge, I have learned some of the rudimentary knowledge about LaTeX. However, if some complex demands appear, I could only use it as a Google-based language(LOL).<br>This is my AP Statistics Course Summer Homework. Made by LaTeX, edited by VS code.  </p>
 <span id="more"></span>
-<h4 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h4><pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">\documentclass&#123;article&#125;
+<h4 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h4><pre class="line-numbers language-none"><code class="language-none">\documentclass&#123;article&#125;
 \title&#123;AP Statistics Summer Homework&#125;
 \author&#123;Link Li\pgfornament[width&#x3D;0.7cm]&#123;94&#125;&#125;
 \date&#123;August 11,2021&#125;
