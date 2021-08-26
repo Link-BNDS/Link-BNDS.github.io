@@ -426,7 +426,8 @@ This is TeX, Version 3.141592653 (TeX Live 2021&#x2F;W32TeX) (preloaded format&#
     <title>pass_river</title>
     <url>/pass-river/</url>
     <content><![CDATA[<p><em><strong>Mathematical　Modeling　Homework</strong></em></p>
-<h4 id="result"><a href="#result" class="headerlink" title="result"></a>result</h4><p><img src="/img/mm_1/q.png" alt="result"></p>
+<h4 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h4><p><img src="/img/mm_1/q.png" alt="q"></p>
+<h4 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h4><p><img src="/img/mm_1/r.png" alt="result1"><br><img src="/img/mm_1/rr.jpg" alt="result2"></p>
 <span id="more"></span>
 <h4 id="SC"><a href="#SC" class="headerlink" title="SC"></a>SC</h4><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
