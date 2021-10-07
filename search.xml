@@ -677,11 +677,7 @@ flag=1 是下一步左下  -1是下一步右上
   <entry>
     <title>affair</title>
     <url>/affair/</url>
-    <content><![CDATA[<p><img src="/img/clamup/3.png" alt="3"></p>
-<span id="more"></span>
-<p><img src="/img/clamup/4.png" alt="4"></p>
-<p><img src="/img/clamup/5.png" alt="5"><br><img src="/img/clamup/6.png" alt="6"><br><img src="/img/clamup/7.png" alt="7"><br><img src="/img/clamup/8.png" alt="8"><br><img src="/img/clamup/9.png" alt="9"><br><img src="/img/clamup/10.png" alt="10"></p>
-]]></content>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>note1</title>
@@ -699,6 +695,12 @@ flag=1 是下一步左下  -1是下一步右上
     <title>share</title>
     <url>/share/</url>
     <content><![CDATA[<p>分享几张图片<br><img src="/img/share/11.jpg" alt="11"><br><img src="/img/share/22.png" alt="22"><br><img src="/img/share/33.png" alt="33"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>note3</title>
+    <url>/note3/</url>
+    <content><![CDATA[<p>有人说“言多必失”，实际上确实是这样，言语并不能带来什么实际性的东西，但是有的时候会带来不好的后果。<br>如果你常常以“夸”的姿态来说话，确实不容易出问题，但是会让人认为你讨厌。<br>如果你常常以“真实”的姿态来说话，有的时候别人不开心就会出问题。<br>但无论是“夸”还是“真实”，都不会带来什么实质性性的好处，尤其是在社交媒体或者是网络上，有的时候还会招来麻烦，或者被利用。<br>所以最好的方法是什么呢？ 正所谓“三缄其口”<br>少说，或者不说，多听，多看，多想，在评判一件事物之前一定要对这个事物有了解，不要对待任何事情都以玩笑的态度来对待。</p>
 ]]></content>
   </entry>
 </search>
