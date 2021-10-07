@@ -686,11 +686,21 @@ flag=1 是下一步左下  -1是下一步右上
   <entry>
     <title>note1</title>
     <url>/note1/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>所有人对所有人在不同地点所展现出来的样子是不同的。但这也是不可避免的，也是人类这一生物为了社群性生活而诞生出的劣根性之一。但这一特性没有什么不好，只要其中一方不依据某种途径得知了他人对待自己的不同评价，这一特性会让人与人之间，至少在表面上，十分和谐。</p>
+]]></content>
   </entry>
   <entry>
     <title>note2</title>
     <url>/note2/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>没有永远的神。<br>随着独立思考和知识的增多，你会逐渐发现有的同龄人或者老师或者权威，并不是一直正确的。于是有的人开始因为一个点便全盘否认他，对他说的话完全不听。<br>也有的人坚信他是完全正确的，对他说的话完全的信服并且改变自己原先的观点。<br>但是我觉得没有完美无瑕的东西，信也不能全信，也不能不信。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>share</title>
+    <url>/share/</url>
+    <content><![CDATA[<p>分享几张图片给大家<br><img src="/img/share/1.jpg" alt="1"></p>
+<span id="more"></span>
+<p><img src="/img/share/2.png" alt="2"><br><img src="/img/share/3.png" alt="3"></p>
+]]></content>
   </entry>
 </search>
