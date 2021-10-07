@@ -698,9 +698,7 @@ flag=1 是下一步左下  -1是下一步右上
   <entry>
     <title>share</title>
     <url>/share/</url>
-    <content><![CDATA[<p>分享几张图片<br><img src="/img/share/11.jpg" alt="11"></p>
-<span id="more"></span>
-<p><img src="/img/share/22.png" alt="22"><br><img src="/img/share/33.png" alt="33"></p>
+    <content><![CDATA[<p>分享几张图片<br><img src="/img/share/11.jpg" alt="11"><br><img src="/img/share/22.png" alt="22"><br><img src="/img/share/33.png" alt="33"></p>
 ]]></content>
   </entry>
 </search>
