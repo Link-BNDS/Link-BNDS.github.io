@@ -1126,4 +1126,137 @@ see
 <p>###成品<br><img src="/img/m1.png" alt="m1"><br><img src="/img/m2.png" alt="m2"><br><img src="/img/m3.png" alt="m3"><br><img src="/img/m4.png" alt="m4"><br><img src="/img/m5.png" alt="m5"></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>correction1</title>
+    <url>/correction1/</url>
+    <content><![CDATA[<p>一个还不错的自己写的tex 模板</p>
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">
+
+\documentclass[12pt]&#123;article&#125;
+\title&#123;AP Micro \&amp; Macro Economics Homework  3&#125;
+\author&#123;Link Li\pgfornament[width&#x3D;0.7cm]&#123;94&#125;&#125;
+\date&#123;October 21, 2021&#125;
+\usepackage&#123;graphicx&#125;
+\usepackage&#123;tikz&#125;
+\usepackage&#123;geometry&#125;
+\usepackage&#123;qrcode&#125;
+\usepackage&#123;pgfornament&#125;
+\usepackage&#123;eso-pic&#125;
+\usepackage&#123;tikzrput&#125;
+\usepackage&#123;fontspec&#125;
+%\usepackage&#123;boondox-cal&#125;
+%\usepackage&#123;amsmath&#125;
+
+%\setmainfont&#123;LinLibertine_R.otf&#125;[BoldFont&#x3D;LinLibertine_RZ.otf,ItalicFont&#x3D;LinLibertine_RI.otf,BoldItalicFont&#x3D;LinLibertine_RZI.otf,]
+%\setsansfont&#123;LinBiolinum_R.otf&#125;[BoldFont&#x3D;LinBiolinum_RB.otf,ItalicFont&#x3D;LinBiolinum_RI.otf,BoldItalicFont&#x3D;LinBiolinum_RBO.otf]
+%\setmonofont&#123;LinLibertine_M.otf&#125;[BoldFont&#x3D;LinLibertine_MB.otf,ItalicFont&#x3D;LinLibertine_MO.otf,BoldItalicFont&#x3D;LinLibertine_MBO.otf]
+
+\setmainfont&#123;Garamond&#125;
+
+
+
+\usetikzlibrary&#123;positioning, arrows.meta, chains, scopes, calc&#125;
+\newcommand\AtPageUpperRight[1]&#123;\AtPageUpperLeft&#123;%
+ \put(\LenToUnit&#123;\paperwidth&#125;,\LenToUnit&#123;0\paperheight&#125;)&#123;#1&#125;%
+ &#125;&#125;%
+\newcommand\AtPageLowerRight[1]&#123;\AtPageLowerLeft&#123;%
+ \put(\LenToUnit&#123;\paperwidth&#125;,\LenToUnit&#123;0\paperheight&#125;)&#123;#1&#125;%
+ &#125;&#125;%
+\AddToShipoutPictureBG&#123;%
+   \AtPageUpperLeft&#123;\put(0,-25)&#123;\pgfornament[width&#x3D;1.75cm]&#123;37&#125;&#125;&#125;
+   \AtPageUpperRight&#123;\put(-50,-25)&#123;\pgfornament[width&#x3D;1.75cm,symmetry&#x3D;v]&#123;37&#125;&#125;&#125;
+   \AtPageLowerLeft&#123;\put(0,25)&#123;\pgfornament[width&#x3D;1.75cm,symmetry&#x3D;h]&#123;37&#125;&#125;&#125;
+   \AtPageLowerRight&#123;\put(-50,25)&#123;\pgfornament[width&#x3D;1.75cm,symmetry&#x3D;c]&#123;37&#125;&#125;&#125;
+&#125;
+
+\begin&#123;document&#125;
+\maketitle
+
+\section&#123;&#125;
+
+\subsection&#123;i.&#125;
+By definition and graphing, we could fathom out that the producer pays the whole tax. Economically intuitively speaking, the more inelastic one side is, the more tax one side will settle. Like if you and your friends go out to have dinner. Only one person is going to pay the bill. There is no doubt that the person who least cares about price will pay the bill. (If they do not know AA)
+
+\subsection&#123;ii.&#125;
+
+No DWL. Graphically, when the supply curve becomes more and more perfectly inelastic, the area of DWL gets closer and closer to zero. Economically intuitively speaking, there is no &quot;can happen but not happen&quot; things. Hence there is no DWL.
+
+\subsection&#123;iii.&#125;
+Interest-based products. For instance, I am a sculpture fanatic, and I spend my whole spare time making sculptures. I don&#39;t want to keep my works, and then I sell them. But I never care how much my sculpture can sell. I just love making them. 
+\subsection&#123;iv.&#125;
+The producer. Because producers are less sensitive(more inelastic) of price. 
+\subsection&#123;v.&#125;
+It has DWL. The amount of DWL is the triangle.(Sorry the graph is on the next page......)
+\begin&#123;figure&#125;[ht]
+   \centering
+   \includegraphics[scale&#x3D;0.6]&#123;1.png&#125;
+   \end&#123;figure&#125;   
+\subsection&#123;vi.&#125;
+1. The price of one kind of necessity in local market. 2. President&#39;s political preference(But the independent variable is the difference president).
+
+
+\section&#123;&#125;
+
+\subsection&#123;i.&#125;
+$$elasticity&#x3D;\frac&#123;\frac&#123;\Delta Q&#125;&#123;Q&#125;&#125;&#123;\frac&#123;\Delta P&#125;&#123;P&#125;&#125;&#x3D;\frac&#123;\%\Delta Q&#125;&#123;\%\Delta P&#125;&#x3D;\frac&#123;30\%&#125;&#123;20\%&#125;&#x3D;1.5$$
+e&gt;1
+\\elastic
+\subsection&#123;ii.&#125;
+$$elasticity&#x3D;\frac&#123;\frac&#123;1200-1000&#125;&#123;\frac&#123;1200+1000&#125;&#123;2&#125;&#125;&#125;&#123;\frac&#123;2.4-2&#125;&#123;\frac&#123;2.4+2&#125;&#123;2&#125;&#125;&#125;&#x3D;1$$
+unit elastic
+\subsection&#123;iii.&#125;
+$$elasticity&#x3D;\frac&#123;\frac&#123;\Delta Qa&#125;&#123;Qa&#125;&#125;&#123;\frac&#123;\Delta Pb&#125;&#123;Pb&#125;&#125;&#x3D;\frac&#123;\%\Delta Qa&#125;&#123;\%\Delta Pb&#125;&#x3D;\frac&#123;25\%&#125;&#123;50\%&#125;&#x3D;0.5$$
+e&gt;0\\
+substitute
+\subsection&#123;iv.&#125;
+$$elasticity&#x3D;\frac&#123;\%\Delta Q&#125;&#123;\%\Delta Income&#125;&#x3D;\frac&#123;\frac&#123;1800-2000&#125;&#123;\frac&#123;2000+1800&#125;&#123;2&#125;&#125;&#125;&#123;20\%&#125;&#x3D;-0.526$$
+e&lt;0\\
+inferior
+
+\subsection&#123;v.&#125;
+$$elasticity&#x3D;\frac&#123;\frac&#123;300000-220000&#125;&#123;\frac&#123;300000+220000&#125;&#123;2&#125;&#125;&#125;&#123;\frac&#123;3-2&#125;&#123;\frac&#123;3+2&#125;&#123;2&#125;&#125;&#125;&#x3D;0.769$$
+e&lt;1\\
+inelastic
+\subsection&#123;vi.&#125;
+Increase.
+Because inelastic indicates the $\% \Delta Q&lt; \% \Delta P.$ Then after the price increase, the total revenue will increase because it equals&#x3D;P*Q.
+
+
+\section&#123;&#125;
+Absolutely not. That lose doesn&#39;t brought by trade. Trade only exist when that trade is reciprocal. We can&#39;t says the trade deficit is &quot;lose&quot;. Besides, if a country issue a lot of currency in to make their money devalued in order to have a higher export. We can&#39;t say they &quot;win&quot; money. Likewise, we can&#39;t just care about the numbers in trade without consider anything else.
+
+\section&#123;&#125;
+
+
+\subsection&#123;i.&#125;
+No comparative advantages.\\
+Import.\\
+(Simply thinking)
+\subsection&#123;ii.&#125;
+From surplus&#39; perspective, the consumer will win. The gain is larger. Because the increased consumer surplus is larger than the decreased producer surplus. Graphically, the increased consumer surplus: b+c, is larger than the decreased producer surplus: b.
+\begin&#123;figure&#125;[h]
+   \centering
+   \includegraphics[scale&#x3D;0.6]&#123;im.png&#125;
+   \end&#123;figure&#125;  
+\subsection&#123;iii.&#125;
+The cosumer will still win. But the society(or the market) will relatively lose(compare to the situation without tariff). And the gov also win(if they just care about revenue).
+
+
+\subsection&#123;iv.&#125;
+see
+\begin&#123;figure&#125;[h]
+   \centering
+   \includegraphics[scale&#x3D;0.6]&#123;imm.png&#125;
+   \end&#123;figure&#125; 
+
+
+\end&#123;document&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+  </entry>
+  <entry>
+    <title>mignon1</title>
+    <url>/mignon1/</url>
+    <content><![CDATA[<p>mignon为什么画的如此之好？<br><img src="/img/mignon/m1.jpg" alt="haha"></p>
+]]></content>
+  </entry>
 </search>
