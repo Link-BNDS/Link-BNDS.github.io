@@ -1273,7 +1273,7 @@ see
   <entry>
     <title>Lab_Name</title>
     <url>/Lab-Name/</url>
-    <content><![CDATA[<p>可以参考一下，虽然我没加注释吧。。。。<br>凑活一下。。。<br>LAB Requirement<br>!(req)[/img/CSALAB/name.png]</p>
+    <content><![CDATA[<p>可以参考一下，虽然我没加注释吧。。。。<br>凑活一下。。。<br>LAB Requirement<br><img src="/img/CSALAB/name.png" alt="req"></p>
 <p>The Name Class</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java">
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Name</span><span class="token punctuation">&#123;</span>
