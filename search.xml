@@ -1507,6 +1507,8 @@ see
         <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"It is located at the "</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>n<span class="token punctuation">,</span>t<span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"'s place in the sorted array."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span id="more"></span>
+
 <h4 id="Linear-Search"><a href="#Linear-Search" class="headerlink" title="Linear Search"></a>Linear Search</h4><p>这个不多说了</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BinarySearch</span><span class="token punctuation">&#123;</span>
@@ -1729,7 +1731,7 @@ see
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<span id="more"></span>
 
 <h4 id="Bucket-Sort"><a href="#Bucket-Sort" class="headerlink" title="Bucket Sort"></a>Bucket Sort</h4><p>桶排序 最典型的空间换时间的例子</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
@@ -1757,6 +1759,8 @@ see
 <span class="token punctuation">&#125;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+
+<h4 id="Sources-amp-References"><a href="#Sources-amp-References" class="headerlink" title="Sources&amp;References"></a>Sources&amp;References</h4><p><a href="https://www.cnblogs.com/zwtgyh/p/10631760.html">https://www.cnblogs.com/zwtgyh/p/10631760.html</a><br><a href="https://blog.csdn.net/left_la/article/details/8656425">https://blog.csdn.net/left_la/article/details/8656425</a><br><a href="https://www.cnblogs.com/zwb2jcy/p/9110676.html">https://www.cnblogs.com/zwb2jcy/p/9110676.html</a><br><a href="https://blog.csdn.net/qq_38790716/article/details/85929469">https://blog.csdn.net/qq_38790716/article/details/85929469</a><br><a href="https://blog.csdn.net/qq_36770641/article/details/82669788">https://blog.csdn.net/qq_36770641/article/details/82669788</a></p>
 ]]></content>
   </entry>
 </search>
