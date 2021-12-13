@@ -1953,7 +1953,20 @@ flag=1 是下一步左下  -1是下一步右上
   <entry>
     <title>h0</title>
     <url>/h0/</url>
-    <content><![CDATA[<p>每天都在体会到心爱之*被别人慢慢剥离的感觉，这种心痛心碎是剧痛的。</p>
+    <content><![CDATA[<p>每天都在体会到暗恋的人被别人慢慢剥离的感觉，这种心痛心碎是剧痛的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ref0</title>
+    <url>/ref0/</url>
+    <content><![CDATA[<p>在知乎上偶然发现迟先生的一篇非常好的文章。<br>上海交通大学计算机系年级第一的心路历程和深刻思考。<br>与恶龙斗，其乐无穷<br><a href="https://zhuanlan.zhihu.com/p/345269981">https://zhuanlan.zhihu.com/p/345269981</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>ref1</title>
+    <url>/ref1/</url>
+    <content><![CDATA[<p>再分享一篇十分好的同样来自迟先生的文章，讲述他自己的大学生涯。</p>
+<h3 id="FA001-Intro-to-Failure"><a href="#FA001-Intro-to-Failure" class="headerlink" title="FA001: Intro to Failure"></a>FA001: Intro to Failure</h3><p><a href="https://www.skyzh.dev/pages/about/">https://www.skyzh.dev/pages/about/</a></p>
 ]]></content>
   </entry>
 </search>
