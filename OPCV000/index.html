@@ -20,27 +20,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"link-bnds.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="我目前的理想与梦想不知道大家是更喜欢详细规划的旅行，还是说走就走的旅行。 每个人都有自己的理想与梦想，我的看起来甚至有一些寒碜。 我的关键字是： 自由。  至于什么是自由的，我的理解就是选择的权力。我喜欢旅游，或者说是去探索未知。至于怎么样的旅游是我喜欢的呢？ 就是一张去程的机票，有足够的金钱和能力（例如沟通能力），我不喜欢干规划好的计划，那种情况下的旅游仿佛不是旅游，而是完成计划本身。曾经我在学">
+<meta name="description" content="Introduction to OpenCVContent Introduction Code Demo  IntroductionAn interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in ha">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DR001">
-<meta property="og:url" content="https://link-bnds.github.io/DR001/index.html">
+<meta property="og:title" content="OPCV000">
+<meta property="og:url" content="https://link-bnds.github.io/OPCV000/index.html">
 <meta property="og:site_name" content="Link LZCのBlog">
-<meta property="og:description" content="我目前的理想与梦想不知道大家是更喜欢详细规划的旅行，还是说走就走的旅行。 每个人都有自己的理想与梦想，我的看起来甚至有一些寒碜。 我的关键字是： 自由。  至于什么是自由的，我的理解就是选择的权力。我喜欢旅游，或者说是去探索未知。至于怎么样的旅游是我喜欢的呢？ 就是一张去程的机票，有足够的金钱和能力（例如沟通能力），我不喜欢干规划好的计划，那种情况下的旅游仿佛不是旅游，而是完成计划本身。曾经我在学">
+<meta property="og:description" content="Introduction to OpenCVContent Introduction Code Demo  IntroductionAn interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in ha">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-01T07:44:29.000Z">
-<meta property="article:modified_time" content="2022-01-01T08:04:33.052Z">
+<meta property="article:published_time" content="2022-01-03T08:45:25.000Z">
+<meta property="article:modified_time" content="2022-01-03T09:03:44.355Z">
 <meta property="article:author" content="Link LZC">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://link-bnds.github.io/DR001/">
+<link rel="canonical" href="https://link-bnds.github.io/OPCV000/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://link-bnds.github.io/DR001/","path":"DR001/","title":"DR001"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://link-bnds.github.io/OPCV000/","path":"OPCV000/","title":"OPCV000"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>DR001 | Link LZCのBlog</title>
+<title>OPCV000 | Link LZCのBlog</title>
   
 
 
@@ -121,7 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9B%AE%E5%89%8D%E7%9A%84%E7%90%86%E6%83%B3%E4%B8%8E%E6%A2%A6%E6%83%B3"><span class="nav-number">1.</span> <span class="nav-text">我目前的理想与梦想</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-to-OpenCV"><span class="nav-number">1.</span> <span class="nav-text">Introduction to OpenCV</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Content"><span class="nav-number">1.1.</span> <span class="nav-text">Content</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction"><span class="nav-number">1.1.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Code"><span class="nav-number">1.1.2.</span> <span class="nav-text">Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo"><span class="nav-number">1.1.3.</span> <span class="nav-text">Demo</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -193,7 +193,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/DR001/">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/OPCV000/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/rin.png">
@@ -206,7 +206,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          DR001
+          OPCV000
         </h1>
 
         <div class="post-meta-container">
@@ -218,7 +218,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-01-01 15:44:29 / Modified: 16:04:33" itemprop="dateCreated datePublished" datetime="2022-01-01T15:44:29+08:00">2022-01-01</time>
+      <time title="Created: 2022-01-03 16:45:25 / Modified: 17:03:44" itemprop="dateCreated datePublished" datetime="2022-01-03T16:45:25+08:00">2022-01-03</time>
     </span>
 
   
@@ -231,8 +231,40 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="我目前的理想与梦想"><a href="#我目前的理想与梦想" class="headerlink" title="我目前的理想与梦想"></a>我目前的理想与梦想</h3><p>不知道大家是更喜欢详细规划的旅行，还是说走就走的旅行。</p>
-<p>每个人都有自己的理想与梦想，我的看起来甚至有一些寒碜。 我的关键字是： 自由。  至于什么是自由的，我的理解就是选择的权力。我喜欢旅游，或者说是去探索未知。<br>至于怎么样的旅游是我喜欢的呢？ 就是一张去程的机票，有足够的金钱和能力（例如沟通能力），我不喜欢干规划好的计划，那种情况下的旅游仿佛不是旅游，而是完成计划本身。曾经我在学生组团的时候最喜欢的，就是晚上偷偷溜出酒店，在空无一人的日本夜晚的街道上游走，或是进入一家拉面馆吃面，或是走着走着忽然发现了任天堂日本本部。我喜欢这种深度游，真正的去感受，真正的去体验。此外，我还喜欢一众活动，比如滑雪，探险，远足等等</p>
+        <h2 id="Introduction-to-OpenCV"><a href="#Introduction-to-OpenCV" class="headerlink" title="Introduction to OpenCV"></a>Introduction to OpenCV</h2><h3 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h3><ul>
+<li>Introduction</li>
+<li>Code</li>
+<li>Demo</li>
+</ul>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>An interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in hands to draw the real time hands frameworks.</p>
+<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><p>Here comes the code: </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> mediapipe <span class="token keyword">as</span> mp
+
+
+
+cap<span class="token operator">=</span>cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+mpHands<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>hands
+hands <span class="token operator">=</span> mpHands<span class="token punctuation">.</span>Hands<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>drawing_utils
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    ret<span class="token punctuation">,</span> img <span class="token operator">=</span>cap<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> ret<span class="token punctuation">:</span> 
+        imgRGB<span class="token operator">=</span>cv2<span class="token punctuation">.</span>cvtColor<span class="token punctuation">(</span>img<span class="token punctuation">,</span>cv2<span class="token punctuation">.</span>COLOR_BGR2RGB<span class="token punctuation">)</span>
+        result<span class="token operator">=</span>hands<span class="token punctuation">.</span>process<span class="token punctuation">(</span>imgRGB<span class="token punctuation">)</span>
+        <span class="token comment">#print(result.multi_hand_landmarks)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+            <span class="token keyword">for</span> handLms <span class="token keyword">in</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+                mpDraw<span class="token punctuation">.</span>draw_landmarks<span class="token punctuation">(</span>img<span class="token punctuation">,</span>handLms<span class="token punctuation">,</span>mpHands<span class="token punctuation">.</span>HAND_CONNECTIONS<span class="token punctuation">)</span>
+        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">,</span>img<span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">ord</span><span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1w44y1j7y3">https://www.bilibili.com/video/BV1w44y1j7y3</a></p>
 
     </div>
 
@@ -250,7 +282,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://link-bnds.github.io/DR001/" title="DR001">https://link-bnds.github.io/DR001/</a>
+      <a href="https://link-bnds.github.io/OPCV000/" title="OPCV000">https://link-bnds.github.io/OPCV000/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -263,14 +295,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/search/" rel="prev" title="search">
-                  <i class="fa fa-chevron-left"></i> search
+                <a href="/DR001/" rel="prev" title="DR001">
+                  <i class="fa fa-chevron-left"></i> DR001
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/OPCV000/" rel="next" title="OPCV000">
-                  OPCV000 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
