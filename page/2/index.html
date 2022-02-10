@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">55</span>
+          <span class="site-state-item-count">56</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -178,6 +178,104 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/OPCV000/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/OPCV000/" class="post-title-link" itemprop="url">OPCV000</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-01-03 16:45:25 / Modified: 17:03:44" itemprop="dateCreated datePublished" datetime="2022-01-03T16:45:25+08:00">2022-01-03</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Introduction-to-OpenCV"><a href="#Introduction-to-OpenCV" class="headerlink" title="Introduction to OpenCV"></a>Introduction to OpenCV</h2><h3 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h3><ul>
+<li>Introduction</li>
+<li>Code</li>
+<li>Demo</li>
+</ul>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>An interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in hands to draw the real time hands frameworks.</p>
+<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><p>Here comes the code: </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> mediapipe <span class="token keyword">as</span> mp
+
+
+
+cap<span class="token operator">=</span>cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+mpHands<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>hands
+hands <span class="token operator">=</span> mpHands<span class="token punctuation">.</span>Hands<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>drawing_utils
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    ret<span class="token punctuation">,</span> img <span class="token operator">=</span>cap<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> ret<span class="token punctuation">:</span> 
+        imgRGB<span class="token operator">=</span>cv2<span class="token punctuation">.</span>cvtColor<span class="token punctuation">(</span>img<span class="token punctuation">,</span>cv2<span class="token punctuation">.</span>COLOR_BGR2RGB<span class="token punctuation">)</span>
+        result<span class="token operator">=</span>hands<span class="token punctuation">.</span>process<span class="token punctuation">(</span>imgRGB<span class="token punctuation">)</span>
+        <span class="token comment">#print(result.multi_hand_landmarks)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+            <span class="token keyword">for</span> handLms <span class="token keyword">in</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+                mpDraw<span class="token punctuation">.</span>draw_landmarks<span class="token punctuation">(</span>img<span class="token punctuation">,</span>handLms<span class="token punctuation">,</span>mpHands<span class="token punctuation">.</span>HAND_CONNECTIONS<span class="token punctuation">)</span>
+        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">,</span>img<span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">ord</span><span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1w44y1j7y3">https://www.bilibili.com/video/BV1w44y1j7y3</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -906,72 +1004,6 @@
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/FA002/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/FA002/" class="post-title-link" itemprop="url">FA002</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-12-24 08:46:52 / Modified: 09:14:13" itemprop="dateCreated datePublished" datetime="2021-12-24T08:46:52+08:00">2021-12-24</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="后悔失败学-The-Law-of-Regret-in-Failurology"><a href="#后悔失败学-The-Law-of-Regret-in-Failurology" class="headerlink" title="后悔失败学 The Law of Regret in Failurology"></a>后悔失败学 The Law of Regret in Failurology</h2><p>人生的主旋律就是后悔，就是那种怎么选都会后悔的后悔。因为时间不可倒流，人生无法重来。不存在什么假如当时，更没有平行时空去给你验证一下，如果当时你怎么怎么样，最后的结果可能会不会就不是这样了。不同的人在同一个人生十字路口会选择不一样的方向。但并不是和你同时站在那个路口，但是却做了另外一个选择的人，他后来走出的人生剧本，就会是你假如也做了那个选择的剧本。我也曾无数次懊悔过以前的选择，也时常在想，如果当初我做了另外一个选择，会不会后来就没有那么多懊悔和遗憾了？转眼多年过去了，我已经越来越相信，这就是人生，怎么选，都会后悔。与其后悔，不如既往不恋，把握当下，迎接未来。</p>
-<p>The central theme of life is regret, which is the kind of regret you must experience whichever you choose. Because time cannot turn time back, life cannot restart life. There is no what if at that time; there is no parallel time to give you a test; the final result may not be different for each choice you made. Different people will choose different directions at the same crossroads of life. But it is not true that the one who stood on the same corner as you were will have the same future as if you chose to go in that direction. I have regretted the previous choice many times and often wonder if I had made another choice, would there have been less regret? Years have passed, I have become more and more convinced that this is life, how to choose, will regret. Rather than regret, it is better not to love in the past, seize the present and welcome the future.</p>
-
       
     </div>
 
