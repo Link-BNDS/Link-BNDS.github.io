@@ -187,6 +187,104 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/OPCV000/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/OPCV000/" class="post-title-link" itemprop="url">OPCV000</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-22 12:45:25 / Modified: 17:24:34" itemprop="dateCreated datePublished" datetime="2022-02-22T12:45:25+08:00">2022-02-22</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Introduction-to-OpenCV"><a href="#Introduction-to-OpenCV" class="headerlink" title="Introduction to OpenCV"></a>Introduction to OpenCV</h2><h3 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h3><ul>
+<li>Introduction</li>
+<li>Code</li>
+<li>Demo</li>
+</ul>
+<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>An interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in hands to draw the real time hands frameworks.</p>
+<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><p>Here comes the code: </p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> mediapipe <span class="token keyword">as</span> mp
+
+
+
+cap<span class="token operator">=</span>cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+mpHands<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>hands
+hands <span class="token operator">=</span> mpHands<span class="token punctuation">.</span>Hands<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>drawing_utils
+
+<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
+    ret<span class="token punctuation">,</span> img <span class="token operator">=</span>cap<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> ret<span class="token punctuation">:</span> 
+        imgRGB<span class="token operator">=</span>cv2<span class="token punctuation">.</span>cvtColor<span class="token punctuation">(</span>img<span class="token punctuation">,</span>cv2<span class="token punctuation">.</span>COLOR_BGR2RGB<span class="token punctuation">)</span>
+        result<span class="token operator">=</span>hands<span class="token punctuation">.</span>process<span class="token punctuation">(</span>imgRGB<span class="token punctuation">)</span>
+        <span class="token comment">#print(result.multi_hand_landmarks)</span>
+        <span class="token keyword">if</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+            <span class="token keyword">for</span> handLms <span class="token keyword">in</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
+                mpDraw<span class="token punctuation">.</span>draw_landmarks<span class="token punctuation">(</span>img<span class="token punctuation">,</span>handLms<span class="token punctuation">,</span>mpHands<span class="token punctuation">.</span>HAND_CONNECTIONS<span class="token punctuation">)</span>
+        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">,</span>img<span class="token punctuation">)</span>
+    
+    <span class="token keyword">if</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">ord</span><span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">break</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1w44y1j7y3">https://www.bilibili.com/video/BV1w44y1j7y3</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/ML-ex1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1515,71 +1613,6 @@ theta <span class="token operator">=</span> <span class="token function">pinv</s
     <div class="post-body" itemprop="articleBody">
           <p>期末考试后本来分数差很多的，也在老师的提分下捞上去了很多，我的小小开心也逐渐消磨。数学建模竞赛，我的贫瘠的知识储备使得我们的实质内容很糟糕。HiMCM出结果，真的没想到居然结果会那么差：Honorable Mentioned。。。再也抬不起头来，假期还在每天拼命的学习托福，可惜大家都已经托福分手，ACT都快出分了，我还没有开刷。</p>
 <p>我这一切失败的根源还是来自我不扎实的基础，和没有好好沉淀，以后好好沉淀吧。。希望能在备考AP前把Coursera machine learning上完，自己手写一个全连接反向传播神经网络出来。哎，还有AIME，托福，寒假作业，物理C。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220126/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/D220126/" class="post-title-link" itemprop="url">D220126</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-01-26 09:57:53 / Modified: 10:37:58" itemprop="dateCreated datePublished" datetime="2022-01-26T09:57:53+08:00">2022-01-26</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>真可惜，我的美本规划中最大的一个败笔就是没有好好学习标化，标化准备的太晚了。<br>只可惜我现在才意识到。</p>
 
       
     </div>
