@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">62</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -187,7 +187,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/APCSA-LAB3/">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/my-first-LaTeX-homework/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/rin.png">
@@ -200,7 +200,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/APCSA-LAB3/" class="post-title-link" itemprop="url">APCSA_LAB3</a>
+          <a href="/my-first-LaTeX-homework/" class="post-title-link" itemprop="url">my_first_LaTeX_homework</a>
         </h2>
 
         <div class="post-meta-container">
@@ -212,7 +212,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-10-21 15:30:07 / Modified: 15:32:43" itemprop="dateCreated datePublished" datetime="2021-10-21T15:30:07+08:00">2021-10-21</time>
+      <time title="Created: 2021-08-22 13:13:22 / Modified: 19:42:42" itemprop="dateCreated datePublished" datetime="2021-08-22T13:13:22+08:00">2021-08-22</time>
     </span>
 
   
@@ -225,580 +225,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>APCSA课上的奇妙入门难度lab…..。。。。。。<br>和OI比起来  普通人体系的CS确实是很亲民的。。。。<br>就是让你模拟你个自动售货机 要求格式比较严</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> cokeMS<span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name">Scanner</span> scan<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Scanner</span> <span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> cash<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Have a Coke! Price: $1.25"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span>cash<span class="token operator">&lt;</span><span class="token number">125</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Insert coin:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">double</span> in<span class="token operator">=</span>scan<span class="token punctuation">.</span><span class="token function">nextDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> input<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>in<span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>input<span class="token operator">==</span><span class="token number">5</span><span class="token operator">||</span>input<span class="token operator">==</span><span class="token number">10</span><span class="token operator">||</span>input<span class="token operator">==</span><span class="token number">25</span><span class="token operator">||</span>input<span class="token operator">==</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    cash<span class="token operator">+=</span>input<span class="token punctuation">;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Amount entered: "</span><span class="token operator">+</span>cash<span class="token operator">+</span><span class="token string">" cents."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>    
-                <span class="token keyword">else</span><span class="token punctuation">&#123;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" ** Rejecting "</span><span class="token operator">+</span>input<span class="token operator">+</span><span class="token string">" cent coin. "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#125;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Please make your selection: \n 1 - Coke \n 2 - Coke Zero \n 3 - Caffeine Free Diet Coke "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token punctuation">;</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Your choice: "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">int</span> c<span class="token operator">=</span>scan<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>c<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    cash<span class="token operator">-=</span><span class="token number">125</span><span class="token punctuation">;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Dispensing Coke"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token keyword">while</span><span class="token punctuation">(</span>cash<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">25</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning quarter."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">10</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning dime."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">5</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning nickel."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                    <span class="token punctuation">&#125;</span>
-                    <span class="token keyword">break</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>c<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    cash<span class="token operator">-=</span><span class="token number">125</span><span class="token punctuation">;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Dispensing Coke Zero"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token keyword">while</span><span class="token punctuation">(</span>cash<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">25</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning quarter."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">10</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning dime."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">5</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning nickel."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                    <span class="token punctuation">&#125;</span>
- 
-                    <span class="token keyword">break</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>    
-                <span class="token keyword">if</span><span class="token punctuation">(</span>c<span class="token operator">==</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    cash<span class="token operator">-=</span><span class="token number">125</span><span class="token punctuation">;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Dispensing Caffeine Free Diet Coke "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token keyword">while</span><span class="token punctuation">(</span>cash<span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">25</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning quarter."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">10</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning dime."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                        <span class="token keyword">if</span><span class="token punctuation">(</span>cash<span class="token operator">>=</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                            cash<span class="token operator">-=</span><span class="token number">5</span><span class="token punctuation">;</span>
-                            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" Returning nickel."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                            <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                        <span class="token punctuation">&#125;</span>
-                    <span class="token punctuation">&#125;</span>
-                    <span class="token keyword">break</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-                <span class="token keyword">else</span><span class="token punctuation">&#123;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" ** No such beverage. Choose another. "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/note4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/note4/" class="post-title-link" itemprop="url">note4</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-07 18:35:30 / Modified: 18:39:43" itemprop="dateCreated datePublished" datetime="2021-10-07T18:35:30+08:00">2021-10-07</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>当你走在大马路上，发生了一个吵架，或者斗殴，或者车祸。看热闹的人永远是最多的，为什么呢？首先，看热闹的成本很少，除非你被砸死，而且能图一乐，<br>周围的群众也可以过一把”裁判的瘾“，很多人想做上帝。<br>而且可以显得平时平平无奇的人，在这个时候很有理性和智慧。所以人们非常喜欢看热闹，无论是图一乐、还是落井下石、还是理中客、还是当圣母假惺惺。都能带给他们无上的快感。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/note3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/note3/" class="post-title-link" itemprop="url">note3</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-07 17:57:43 / Modified: 18:07:56" itemprop="dateCreated datePublished" datetime="2021-10-07T17:57:43+08:00">2021-10-07</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>有人说“言多必失”，实际上确实是这样，言语并不能带来什么实际性的东西，但是有的时候会带来不好的后果。<br>如果你常常以“夸”的姿态来说话，确实不容易出问题，但是会让人认为你讨厌。<br>如果你常常以“真实”的姿态来说话，有的时候别人不开心就会出问题。<br>但无论是“夸”还是“真实”，都不会带来什么实质性性的好处，尤其是在社交媒体或者是网络上，有的时候还会招来麻烦，或者被利用。<br>所以最好的方法是什么呢？ 正所谓“三缄其口”<br>少说，或者不说，多听，多看，多想，在评判一件事物之前一定要对这个事物有了解，不要对待任何事情都以玩笑的态度来对待。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/share/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/share/" class="post-title-link" itemprop="url">share</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-10-07 17:44:32 / Modified: 17:56:06" itemprop="dateCreated datePublished" datetime="2021-10-07T17:44:32+08:00">2021-10-07</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>分享几张图片<br><img src="/img/share/11.jpg" alt="11"><br><img src="/img/share/22.png" alt="22"><br><img src="/img/share/33.png" alt="33"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/note2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/note2/" class="post-title-link" itemprop="url">note2</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-06 20:34:31" itemprop="dateCreated datePublished" datetime="2021-10-06T20:34:31+08:00">2021-10-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-07 17:41:43" itemprop="dateModified" datetime="2021-10-07T17:41:43+08:00">2021-10-07</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>没有永远的神。<br>随着独立思考和知识的增多，你会逐渐发现有的同龄人或者老师或者权威，并不是一直正确的。于是有的人开始因为一个点便全盘否认他，对他说的话完全不听。<br>也有的人坚信他是完全正确的，对他说的话完全的信服并且改变自己原先的观点。<br>但是我觉得没有完美无瑕的东西，信也不能全信，也不能不信。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/note1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/note1/" class="post-title-link" itemprop="url">note1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-06 20:34:13" itemprop="dateCreated datePublished" datetime="2021-10-06T20:34:13+08:00">2021-10-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-07 17:39:04" itemprop="dateModified" datetime="2021-10-07T17:39:04+08:00">2021-10-07</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>所有人对所有人在不同地点所展现出来的样子是不同的。但这也是不可避免的，也是人类这一生物为了社群性生活而诞生出的劣根性之一。但这一特性没有什么不好，只要其中一方不依据某种途径得知了他人对待自己的不同评价，这一特性会让人与人之间，至少在表面上，十分和谐。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/affair/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/affair/" class="post-title-link" itemprop="url">affair</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-06 18:40:09" itemprop="dateCreated datePublished" datetime="2021-10-06T18:40:09+08:00">2021-10-06</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-10-07 18:08:25" itemprop="dateModified" datetime="2021-10-07T18:08:25+08:00">2021-10-07</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/pass-river/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/pass-river/" class="post-title-link" itemprop="url">pass_river</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-08-26 13:37:18 / Modified: 13:48:35" itemprop="dateCreated datePublished" datetime="2021-08-26T13:37:18+08:00">2021-08-26</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><em><strong>Mathematical　Modeling　Homework</strong></em></p>
-<h4 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h4><p><img src="/img/mm_1/q.png" alt="q"></p>
-<h4 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h4><p><img src="/img/mm_1/r.png" alt="result1"><br><img src="/img/mm_1/rr.jpg" alt="result2"></p>
+          <h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>I heard about LaTeX from Ben. He told me our school’s previous Calculus 3 teacher stipulated that students in his class must use LaTeX to write their homework.  At the beginning of summer vacation, I started to learn some basic knowledge about LaTeX. Thanks to my C++ knowledge, I have learned some of the rudimentary knowledge about LaTeX. However, if some complex demands appear, I could only use it as a Google-based language(LOL).<br>This is my AP Statistics Course Summer Homework. Made by LaTeX, edited by VS code.  </p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/pass-river/#more" rel="contents">
+              <a class="btn" href="/my-first-LaTeX-homework/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -829,7 +259,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/determinant/">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/rin.png">
@@ -842,136 +272,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/determinant/" class="post-title-link" itemprop="url">determinant</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-08-22 19:43:46 / Modified: 19:51:11" itemprop="dateCreated datePublished" datetime="2021-08-22T19:43:46+08:00">2021-08-22</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h4><p>This is a program designed for finding the determinant of any matrix.<br>It uses depth-first search to find the Laplace expansion form of each matrix. </p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-<span class="token keyword">struct</span> <span class="token class-name">mx</span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">int</span> m<span class="token punctuation">,</span>n<span class="token punctuation">;</span>
-	<span class="token keyword">int</span> qu<span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> <span class="token function">det</span><span class="token punctuation">(</span>mx U<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>U<span class="token punctuation">.</span>m<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">return</span> U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>U<span class="token punctuation">.</span>m<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">int</span> mid<span class="token punctuation">;</span>
-		mid<span class="token operator">=</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">*</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">-</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token operator">*</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-		<span class="token keyword">return</span> mid<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>U<span class="token punctuation">.</span>m<span class="token operator">>=</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">int</span> allmid<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>U<span class="token punctuation">.</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-			mx subU<span class="token punctuation">;</span>
-			subU<span class="token punctuation">.</span>m<span class="token operator">=</span>U<span class="token punctuation">.</span>m<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-			subU<span class="token punctuation">.</span>n<span class="token operator">=</span>U<span class="token punctuation">.</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-			<span class="token keyword">int</span> flag<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-			<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> ii<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>ii<span class="token operator">&lt;=</span>U<span class="token punctuation">.</span>m<span class="token punctuation">;</span>ii<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-				flag<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-				<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> jj<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>jj<span class="token operator">&lt;=</span>U<span class="token punctuation">.</span>n<span class="token punctuation">;</span>jj<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>	
-					<span class="token keyword">if</span><span class="token punctuation">(</span>jj<span class="token operator">==</span>i<span class="token punctuation">)</span>
-						<span class="token keyword">continue</span><span class="token punctuation">;</span>
-					flag<span class="token operator">++</span><span class="token punctuation">;</span>
-					subU<span class="token punctuation">.</span>qu<span class="token punctuation">[</span>ii<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>flag<span class="token punctuation">]</span><span class="token operator">=</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span>ii<span class="token punctuation">]</span><span class="token punctuation">[</span>jj<span class="token punctuation">]</span><span class="token punctuation">;</span>
-				<span class="token punctuation">&#125;</span>
-			<span class="token punctuation">&#125;</span>
-			<span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">2</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span> 
-				allmid<span class="token operator">-=</span><span class="token function">det</span><span class="token punctuation">(</span>subU<span class="token punctuation">)</span><span class="token operator">*</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-			<span class="token keyword">else</span> 
-				allmid<span class="token operator">+=</span><span class="token function">det</span><span class="token punctuation">(</span>subU<span class="token punctuation">)</span><span class="token operator">*</span>U<span class="token punctuation">.</span>qu<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-		<span class="token keyword">return</span> allmid<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-	mx A<span class="token punctuation">;</span>
-	cout<span class="token operator">&lt;&lt;</span><span class="token string">"Please enter the size of the determinant."</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	cout<span class="token operator">&lt;&lt;</span><span class="token string">"Please enter a space between them."</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	cin<span class="token operator">>></span>A<span class="token punctuation">.</span>m<span class="token operator">>></span>A<span class="token punctuation">.</span>n<span class="token punctuation">;</span>
-	cout<span class="token operator">&lt;&lt;</span><span class="token string">"Please enter the elements (matrix form)."</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>A<span class="token punctuation">.</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>A<span class="token punctuation">.</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-			cin<span class="token operator">>></span>A<span class="token punctuation">.</span>qu<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-	<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>A<span class="token punctuation">.</span>m<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-		cout<span class="token operator">&lt;&lt;</span><span class="token string">"| "</span><span class="token punctuation">;</span>
-		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>A<span class="token punctuation">.</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-			cout<span class="token operator">&lt;&lt;</span>A<span class="token punctuation">.</span>qu<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token string">" "</span><span class="token punctuation">;</span>
-		<span class="token punctuation">&#125;</span>	
-		<span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">!=</span>A<span class="token punctuation">.</span>m<span class="token punctuation">)</span> 
-			cout<span class="token operator">&lt;&lt;</span><span class="token string">"|"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-		<span class="token keyword">else</span> 
-			cout<span class="token operator">&lt;&lt;</span><span class="token string">"|"</span><span class="token punctuation">;</span>	
-	<span class="token punctuation">&#125;</span> 
-	cout<span class="token operator">&lt;&lt;</span><span class="token string">"  =  "</span><span class="token punctuation">;</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>A<span class="token punctuation">.</span>m<span class="token operator">!=</span>A<span class="token punctuation">.</span>n<span class="token punctuation">)</span> cout<span class="token operator">&lt;&lt;</span><span class="token string">"no result !!!"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	<span class="token keyword">else</span> cout<span class="token operator">&lt;&lt;</span><span class="token function">det</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/mental-assessment/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/mental-assessment/" class="post-title-link" itemprop="url">mental_assessment</a>
+          <a href="/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
         </h2>
 
         <div class="post-meta-container">
@@ -982,14 +283,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2021-08-22 19:32:58" itemprop="dateCreated datePublished" datetime="2021-08-22T19:32:58+08:00">2021-08-22</time>
+      <time title="Created: 2021-07-29 18:37:20" itemprop="dateCreated datePublished" datetime="2021-07-29T18:37:20+08:00">2021-07-29</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-08-26 13:41:28" itemprop="dateModified" datetime="2021-08-26T13:41:28+08:00">2021-08-26</time>
+        <time title="Modified: 2021-08-22 12:49:36" itemprop="dateModified" datetime="2021-08-22T12:49:36+08:00">2021-08-22</time>
       </span>
 
   
@@ -1002,15 +303,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>A confirmatory program about one example from school’s mathematical modeling class.<br>C++.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/mental-assessment/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <p>hello world</p>
+
       
     </div>
 
@@ -1029,7 +323,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
   </nav>
 
 </div>

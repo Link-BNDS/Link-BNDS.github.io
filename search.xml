@@ -318,87 +318,6 @@ see
 ]]></content>
   </entry>
   <entry>
-    <title>arr2D</title>
-    <url>/arr2D/</url>
-    <content><![CDATA[<p>双重数组的练习代码</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Pitch</span><span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> agrs<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name">Scanner</span> scan<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Scanner</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span>in<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> pitchArray<span class="token operator">=</span><span class="token punctuation">&#123;</span>
-        <span class="token punctuation">&#123;</span><span class="token number">45</span><span class="token punctuation">,</span><span class="token number">105</span><span class="token punctuation">,</span><span class="token number">67</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-        <span class="token punctuation">&#123;</span><span class="token number">81</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">93</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">,</span><span class="token number">128</span><span class="token punctuation">,</span><span class="token number">88</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-        <span class="token punctuation">&#123;</span><span class="token number">45</span><span class="token punctuation">,</span><span class="token number">53</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-        <span class="token punctuation">&#123;</span><span class="token number">79</span><span class="token punctuation">,</span><span class="token number">107</span><span class="token punctuation">,</span><span class="token number">53</span><span class="token punctuation">,</span><span class="token number">79</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-        <span class="token punctuation">&#123;</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">63</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-        <span class="token comment">// initialization "JUST IN CASE"</span>
-        <span class="token keyword">int</span> pitchBest<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchBest<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            pitchBest<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        
-        <span class="token keyword">int</span> pitchWorst<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchWorst<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            pitchWorst<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1000000</span><span class="token punctuation">;</span>
-
-        <span class="token keyword">int</span> pitchSum<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchSum<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            pitchSum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        
-        <span class="token keyword">int</span> pitchAV<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchAV<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            pitchAV<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        
-        <span class="token keyword">int</span> count<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchAV<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            count<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        
-        <span class="token keyword">int</span> tt<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>tt<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-            tt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">></span>pitchBest<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> 
-                    pitchBest<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">&lt;</span>pitchWorst<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> 
-                    pitchWorst<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                pitchSum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+=</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
-                count<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span>
-                tt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+=</span>pitchArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>    
-            <span class="token punctuation">&#125;</span>
-            pitchAV<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>pitchSum<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span>count<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-        
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Pitcher#"</span><span class="token operator">+</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">" pitched "</span><span class="token operator">+</span>count<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" games. Highest: "</span><span class="token operator">+</span>pitchBest<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" Lowest: "</span><span class="token operator">+</span>pitchWorst<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" total was: "</span><span class="token operator">+</span>tt<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" average was: "</span><span class="token operator">+</span>pitchAV<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-
-        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Which guy's stats do you want to see? If you want to quit enter\"0\"."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">int</span> n<span class="token punctuation">;</span>
-                n<span class="token operator">=</span>scan<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>n<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>n<span class="token operator">></span>pitchArray<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Invalid Input."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-                <span class="token keyword">else</span><span class="token punctuation">&#123;</span>
-                    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Pitcher#"</span><span class="token operator">+</span>n<span class="token operator">+</span><span class="token string">" pitched "</span><span class="token operator">+</span>count<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" games. Highest: "</span><span class="token operator">+</span>pitchBest<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" Lowest: "</span><span class="token operator">+</span>pitchWorst<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" total was: "</span><span class="token operator">+</span>tt<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token string">" average was: "</span><span class="token operator">+</span>pitchAV<span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                    <span class="token keyword">break</span><span class="token punctuation">;</span>
-                <span class="token punctuation">&#125;</span>
-            <span class="token punctuation">&#125;</span>
-        <span class="token punctuation">&#125;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Copyright : <a href="https://www.pixiv.net/en/artworks/93491586">https://www.pixiv.net/en/artworks/93491586</a><br><img src="/img/wow.jpg" alt="wow"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>correction1</title>
     <url>/correction1/</url>
     <content><![CDATA[<p>一个还不错的自己写的tex 模板</p>
@@ -751,21 +670,6 @@ see
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
   </entry>
   <entry>
-    <title>gura</title>
-    <url>/gura/</url>
-    <content><![CDATA[<p>真是超级糟糕的一天呀。 2021-12-06<br><img src="/img/gura.png" alt="g0"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>egg</title>
-    <url>/egg/</url>
-    <content><![CDATA[<p><img src="/img/white.jpg" alt="egg"></p>
-<span id="more"></span>
-
-<p>Source: <a href="https://www.pixiv.net/en/artworks/94442720">https://www.pixiv.net/en/artworks/94442720</a><br>By: 藤ちょこ（藤原）</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/hello-world/</url>
     <content><![CDATA[<p>hello world</p>
@@ -853,17 +757,6 @@ string <span class="token function">cs</span><span class="token punctuation">(</
 <span class="token punctuation">&#125;</span>
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-  </entry>
-  <entry>
-    <title>illu1</title>
-    <url>/illu1/</url>
-    <content><![CDATA[<p>share some beautiful illustrations<br><img src="/img/mignon/8.jpg" alt="8"></p>
-<p><img src="/img/mignon/2.jpg" alt="2"><br><img src="/img/mignon/0.jpg" alt="0"></p>
-<span id="more"></span>
-<p><img src="/img/mignon/1.jpg" alt="1"><br><img src="/img/mignon/3.jpg" alt="3"><br><img src="/img/mignon/4.jpg" alt="4"><br><img src="/img/mignon/5.jpg" alt="5"><br><img src="/img/mignon/6.jpg" alt="6"><br><img src="/img/mignon/7.jpg" alt="7"></p>
-<p><img src="/img/mignon/0.jpg" alt="0"></p>
-<p>Source: <a href="https://www.pixivision.net/zh/a/2189">https://www.pixivision.net/zh/a/2189</a></p>
-]]></content>
   </entry>
   <entry>
     <title>mental_assessment</title>
@@ -2147,16 +2040,6 @@ BoldItalicFont &#x3D; texgyrepagella-bolditalic.otf ]
 ]]></content>
   </entry>
   <entry>
-    <title>illu2</title>
-    <url>/illu2/</url>
-    <content><![CDATA[<p><img src="/img/winter2.png" alt="3"><br><img src="/img/accompany0.jpg" alt="1"><br><img src="/img/sakura0.jpg" alt="2"></p>
-<span id="more"></span>
-<p>Source:<br><a href="https://www.pixiv.net/en/artworks/88521711">https://www.pixiv.net/en/artworks/88521711</a></p>
-<p><a href="https://www.pixiv.net/en/artworks/94819769">https://www.pixiv.net/en/artworks/94819769</a></p>
-<p><a href="https://www.pixiv.net/en/artworks/89893274">https://www.pixiv.net/en/artworks/89893274</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>FA002</title>
     <url>/FA002/</url>
     <content><![CDATA[<h2 id="后悔失败学-The-Law-of-Regret-in-Failurology"><a href="#后悔失败学-The-Law-of-Regret-in-Failurology" class="headerlink" title="后悔失败学 The Law of Regret in Failurology"></a>后悔失败学 The Law of Regret in Failurology</h2><p>人生的主旋律就是后悔，就是那种怎么选都会后悔的后悔。因为时间不可倒流，人生无法重来。不存在什么假如当时，更没有平行时空去给你验证一下，如果当时你怎么怎么样，最后的结果可能会不会就不是这样了。不同的人在同一个人生十字路口会选择不一样的方向。但并不是和你同时站在那个路口，但是却做了另外一个选择的人，他后来走出的人生剧本，就会是你假如也做了那个选择的剧本。我也曾无数次懊悔过以前的选择，也时常在想，如果当初我做了另外一个选择，会不会后来就没有那么多懊悔和遗憾了？转眼多年过去了，我已经越来越相信，这就是人生，怎么选，都会后悔。与其后悔，不如既往不恋，把握当下，迎接未来。</p>
@@ -2266,11 +2149,6 @@ mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.<
 <p>和峰哥去的不同点是什么呢？从日本系列就可以看出来，峰哥拍的都是贫民窟，一兰拉面，和牛什么的。我的话更喜欢，札幌夜里的居酒屋，富士山下的小民宿，仙台的本地海鲜市场这种风格的旅行。</p>
 <p>To see the world, things dangerous to come to, to see behind the walls, to draw closer, to find each other and to feel. That is the purpose of life.</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>D220106</title>
-    <url>/D220106/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>D220109</title>
@@ -3157,17 +3035,6 @@ theta <span class="token operator">=</span> <span class="token function">pinv</s
 ]]></content>
   </entry>
   <entry>
-    <title>BNDS001</title>
-    <url>/BNDS001/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>D220308</title>
-    <url>/D220308/</url>
-    <content><![CDATA[<p>Today is one of the most awful days in my life. </p>
-]]></content>
-  </entry>
-  <entry>
     <title>D220318</title>
     <url>/D220318/</url>
     <content><![CDATA[<p>夜风凛凛 独回望旧事前尘<br>是以往的我 充满怒愤<br>诬告与指责积压着满肚气不忿<br>对谣言反应甚为着紧<br>受了教训 得了书经的指引<br>现已看得透 不再自困<br>但觉有分数<br>不再像以往那般笨<br>抹泪痕轻快笑着行<br>冥冥中都早注定你富或贫<br>是错永不对真永是真<br>任你怎说安守我本份<br>始终相信沉默是金<br>是非有公理 慎言莫冒犯别人<br>遇上冷风雨休太认真<br>自信满心里 休理会讽刺与质问<br>笑骂由人 洒脱地做人</p>
@@ -3179,20 +3046,9 @@ theta <span class="token operator">=</span> <span class="token function">pinv</s
 ]]></content>
   </entry>
   <entry>
-    <title>I</title>
-    <url>/I/</url>
-    <content><![CDATA[<p> <img src="/img/myself.jpg" alt="f1"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>D220317</title>
     <url>/D220317/</url>
     <content><![CDATA[<p>我有的时候，太过于善良了，这不好。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>220318</title>
-    <url>/220318/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>

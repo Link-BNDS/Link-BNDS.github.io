@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">62</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -178,306 +178,6 @@
 
 
     <div class="main-inner index posts-expand">
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220223/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/D220223/" class="post-title-link" itemprop="url">D220223</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-02-23 21:57:43 / Modified: 22:02:42" itemprop="dateCreated datePublished" datetime="2022-02-23T21:57:43+08:00">2022-02-23</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>忽然发现在学校这种全天学习，学和放松娱乐整合成一个整体的状态非常高效且舒适。总而言之就是一直在学并且放松，从早上一直到睡觉，并不像有些人想的那样，什么时候到什么时候全学，然后开始玩知道睡觉，我觉得这种学习时间的分隔感会降低学习效率。<br>此外，在看了那么多北师大实验国际部的申请成功案例之后，我终于意识到了一个事情，就是实验人均一个各种各样的科研，这才是他们成功的关键。<br>爱一个人却不敢接近，并不是因为爱得不够深；而是因为爱的足够深从而害怕失去这易碎且美好的挂念。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/OPCV000/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/OPCV000/" class="post-title-link" itemprop="url">OPCV000</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-02-22 12:45:25 / Modified: 17:24:34" itemprop="dateCreated datePublished" datetime="2022-02-22T12:45:25+08:00">2022-02-22</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Introduction-to-OpenCV"><a href="#Introduction-to-OpenCV" class="headerlink" title="Introduction to OpenCV"></a>Introduction to OpenCV</h2><h3 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h3><ul>
-<li>Introduction</li>
-<li>Code</li>
-<li>Demo</li>
-</ul>
-<h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>An interesting “Hello World” in OpenCV. It invokes the camera and recognizes hands. Then, it uses the coordinates of these nodes in hands to draw the real time hands frameworks.</p>
-<h4 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h4><p>Here comes the code: </p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
-<span class="token keyword">import</span> mediapipe <span class="token keyword">as</span> mp
-
-
-
-cap<span class="token operator">=</span>cv2<span class="token punctuation">.</span>VideoCapture<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
-
-mpHands<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>hands
-hands <span class="token operator">=</span> mpHands<span class="token punctuation">.</span>Hands<span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.</span>solutions<span class="token punctuation">.</span>drawing_utils
-
-<span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
-    ret<span class="token punctuation">,</span> img <span class="token operator">=</span>cap<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
-    <span class="token keyword">if</span> ret<span class="token punctuation">:</span> 
-        imgRGB<span class="token operator">=</span>cv2<span class="token punctuation">.</span>cvtColor<span class="token punctuation">(</span>img<span class="token punctuation">,</span>cv2<span class="token punctuation">.</span>COLOR_BGR2RGB<span class="token punctuation">)</span>
-        result<span class="token operator">=</span>hands<span class="token punctuation">.</span>process<span class="token punctuation">(</span>imgRGB<span class="token punctuation">)</span>
-        <span class="token comment">#print(result.multi_hand_landmarks)</span>
-        <span class="token keyword">if</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
-            <span class="token keyword">for</span> handLms <span class="token keyword">in</span> result<span class="token punctuation">.</span>multi_hand_landmarks<span class="token punctuation">:</span>
-                mpDraw<span class="token punctuation">.</span>draw_landmarks<span class="token punctuation">(</span>img<span class="token punctuation">,</span>handLms<span class="token punctuation">,</span>mpHands<span class="token punctuation">.</span>HAND_CONNECTIONS<span class="token punctuation">)</span>
-        cv2<span class="token punctuation">.</span>imshow<span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">,</span>img<span class="token punctuation">)</span>
-    
-    <span class="token keyword">if</span> cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token builtin">ord</span><span class="token punctuation">(</span><span class="token string">'q'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">break</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1w44y1j7y3">https://www.bilibili.com/video/BV1w44y1j7y3</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220222/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/D220222/" class="post-title-link" itemprop="url">D220222</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-02-22 10:08:25 / Modified: 10:33:04" itemprop="dateCreated datePublished" datetime="2022-02-22T10:08:25+08:00">2022-02-22</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这两天过的还行吧。<br>20号的托福，看起来确实是看平时积累，阅读听力还行吧，就是写作写的太烂了，又要成为一个遗憾了哎。<br>下午发现过评一等奖了，好耶，终于翻身有幸能和本神们一起了。只不过可惜就是我A+的科目都是99，100.没A+的科目都是96，95.日了，GPA或成最大输家。<br>但是不如和我喜欢的女生一起散个步，可惜我一共只体会过两三次。<br>发现AP申请美本好难受啊，必须得有ACT，IB人家有预估分。我们这届没有ACT就是送死，加州虽然不看了但是减招国际生。<br>而且我的竞赛结果全都烂的一比导致honor list五个都写不满了，kaggle加油！<br>人家一直都说舔狗都是最低级的，可惜，我连舔都不会，甚至不敢，连当舔狗都不会当，我真是废物啊。<br>无数次想过放弃，可惜始终放不下。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220219/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/rin.png">
-      <meta itemprop="name" content="Link LZC">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Link LZCのBlog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/D220219/" class="post-title-link" itemprop="url">D220219</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-02-19 22:57:28" itemprop="dateCreated datePublished" datetime="2022-02-19T22:57:28+08:00">2022-02-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-22 17:09:29" itemprop="dateModified" datetime="2022-02-22T17:09:29+08:00">2022-02-22</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>明天就要考托福了，这个成绩很大程度上决定了这个学期一开始的心态是如何。</p>
-<p>我确实要减少使用手机的时间，手机带来了太多的：碎片化的，超前的，无意义的，只会带来紧张焦虑和分心的无意义内容。导致我的不能长时间集中注意力去做一件事情。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
 
     
 
@@ -879,8 +579,287 @@ mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.<
 
 
 
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220126/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/D220126/" class="post-title-link" itemprop="url">D220126</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-01-26 09:57:53 / Modified: 10:37:58" itemprop="dateCreated datePublished" datetime="2022-01-26T09:57:53+08:00">2022-01-26</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>真可惜，我的美本规划中最大的一个败笔就是没有好好学习标化，标化准备的太晚了。<br>只可惜我现在才意识到。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220125/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/D220125/" class="post-title-link" itemprop="url">D220125</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-01-25 16:45:58 / Modified: 18:00:20" itemprop="dateCreated datePublished" datetime="2022-01-25T16:45:58+08:00">2022-01-25</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>期末考试确实是看平时的积累，所以说即使期末的时候单独拿来复习的时间很短，平时学的透彻就没关系。这学期我期末考试平均每科复习1.5个小时，最后还是保住了5个A+，最开心的是Calculus3这门senior only的课拿了98，然后统计最后拿了99，Rush的经济拿了99，政治和英语这两个我极度不善产而且抵触的科目也拿了High A。<br>但是下次还是要好好复习，避免翻车。<br>昨天刚提交完IMMC的论文，狂干四天，结果今天休息一天明天就要开始早8晚8开始坐牢，哎，我恨标化，而且标化还是最重要的东西。    </p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/G11S1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/G11S1/" class="post-title-link" itemprop="url">G11S1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-13 22:23:14" itemprop="dateCreated datePublished" datetime="2022-01-13T22:23:14+08:00">2022-01-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-01-14 12:15:31" itemprop="dateModified" datetime="2022-01-14T12:15:31+08:00">2022-01-14</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="我的高二上"><a href="#我的高二上" class="headerlink" title="我的高二上"></a>我的高二上</h1><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+<li>总览</li>
+<li>分科</li>
+<li>寒假</li>
+<li>展望</li>
+</ul>
+<h3 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h3><p>有几个大体上的感慨：</p>
+<ul>
+<li>其实对于普通的课业来讲，学好，或者说取得一个好成绩十分简单。上课认真听讲做笔记，下课仔细复习多练习。没有别的，高一我两个都没有做到，上课拿一个平板打游戏刷知乎，晚自习打游戏看视频，所以非常失败；高二开学我意识到了这点，我开始上课认真听讲，认真做笔记。可惜下课之后还是无法克服自己的懒惰，没有积极的复习和练习，尤其是期末考试前复习基本等于零，造就了我平时分很高但是期末分很低最后学期GPA很可惜的惨剧。</li>
+<li>非常不自律，在没有什么事情的晚自习，或者周末回到家中，我的有效学习时间接近于零，这是因为我从小就没有养成一个自律的好习惯和没有学会如何延时满足。我宁可将庞大的事情拖到最后熬夜赶完，也不会先去完成之后再玩。以至于很多时候自己都会叹息：如果要是早点准备的话结果会好很多。可惜很多时候，因为我有一定的能力和天赋还有临场反应能力，导致这些临时赶出来的东西甚至会达到一个好的效果。这种反向正反馈给我养成延迟满足的好习惯造成了极大的负面效果。</li>
+<li>不能沉淀，虽然我的个性签名都已经改成了沉淀，但是我依然不会沉淀。在我心中最好的状态就是除了平常的学习，要考的标化以外，有一个自己喜欢，有趣，而且有用的一个可以是爱好也好，或者是一个学习领域也好。每天干完了要干的事情，就开始全心全意的投入到这个事情上去。久而久之就沉淀了下来，就成功了。希望我在寒假和下学期能够在机器学习，kaggle社区里好好沉淀与学习。</li>
+<li>其实对于GPA最大的心理内耗是并不是源于自己的绝对分数，而是源于比如：别人的科目好拿GPA拿了A+，或者是别人有很多96.5或者89.5，感觉自己一个学期每天花那么多时间努力和他们没什么差距。这些距离感反而更能使人难受。尤其是比如别人CSP平时小测期中给分高还水，自己CSA每天刻苦复习刷题背知识点，最后结果（在分数上）没什么差距，我当然知道真正掌握知识的不同，但是GPA的重要性使我想不了这么多。</li>
+<li>愿这些遗憾与仇恨在以后化身沉淀的动力吧。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://link-bnds.github.io/D220110/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/rin.png">
+      <meta itemprop="name" content="Link LZC">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Link LZCのBlog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/D220110/" class="post-title-link" itemprop="url">D220110</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-01-10 21:19:56 / Modified: 21:21:41" itemprop="dateCreated datePublished" datetime="2022-01-10T21:19:56+08:00">2022-01-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这次期末用我一整个学期每天的努力，换来了一个血的教训：尽管你平时复习考试再用功，再好好学，你期末不充足的复习，整个学期的努力全部白费了，尽管期末只占20%。<br>希望这次能饶恕我一次。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>
