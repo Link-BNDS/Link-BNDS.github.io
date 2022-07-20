@@ -3070,17 +3070,16 @@ theta <span class="token operator">=</span> <span class="token function">pinv</s
 ]]></content>
   </entry>
   <entry>
-    <title>YuWen</title>
-    <url>/YuWen/</url>
-    <content><![CDATA[<p>早上10点，无数的眼睛和双手等待在电脑屏幕外，只为了能够在第一时间抢到那放出的那三个加分名额。多么可笑？我仿佛看到了耍猴的杂技表演着，挥舞着手臂，看着猴子上蹿下跳。</p>
-<p>欲望，但这并不是欲望。你校一直对自己的GPA十分自豪，认为其十分有含金量，十分硬核，十分能体现出学术水平和认真水平。但是实际情况却十分可笑。</p>
-<p>GPA作为衡量学生学术水平和学习认真程度的指标，他的获得方式也应该是由这两个指标而来。但为什么一个用来反应你学习的一个数字，和让大家现场抢，这样的一个实施方式结合在一起。我脑中对于GPA的印象逐渐越飘越远了。为什么语文课会包含着这样的一个GPA制度呢？</p>
-]]></content>
-  </entry>
-  <entry>
     <title>D220624</title>
     <url>/D220624/</url>
     <content><![CDATA[<p>我意识到了，我现在的失败是由我内心的浮躁造成的。无法自律，无法持续，无法精心。在各种现代电子平台和设备下迷失在了浮躁的电子流中。<br>我需要找到我的inner peace</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Stokes_Theorem</title>
+    <url>/Stokes-Theorem/</url>
+    <content><![CDATA[<p>For surface S in $ R^3 $ space is an oriented surface in x,y,z coordinate with boundary $ \partial S $ . Let R be abounded, open region in s, t, plane with smooth boundary $ \partial R $ . Suppose that $ F $ is a continuously differentiable vector field. $ \vec{r} $ is a smooth parametrization that maps R to S, and $ \partial R to \partial S $. Then</p>
+<p>$$<br>\iint_S{curl,,\vec{F},,·,,d\vec{S}}=\iint_S{\left( \nabla \times \vec{F} \right) ,,·,,\vec{n},,dS}=\int_{\partial S}{\vec{F},,·,,\vec{T},,ds}=,,\int_{\partial S}{\vec{F},,·,,d\vec{r}}<br>$$</p>
 ]]></content>
   </entry>
 </search>
