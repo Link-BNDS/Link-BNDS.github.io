@@ -216,7 +216,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-07-20 15:20:42 / Modified: 18:46:53" itemprop="dateCreated datePublished" datetime="2022-07-20T15:20:42+08:00">2022-07-20</time>
+      <time title="Created: 2022-07-20 15:20:42 / Modified: 18:59:01" itemprop="dateCreated datePublished" datetime="2022-07-20T15:20:42+08:00">2022-07-20</time>
     </span>
 
   
@@ -230,6 +230,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <h3 id="introduction">Introduction</h3>
+<p>In my second semester of High School Junior year, when we were studying vector calculus <span class="citation" data-cites="Calculus">@Calculus</span> 3, our teacher gave us an assignment: proof of Stokes formula. CALCULUS EARLY TRANSCENDENTALS EIGHTH EDITION JAMES STEWART (our Calculus3 textbook) only has a special form of stokes' theorem proof. Thus, I looked up the prood at old Chinese Text Book. It is a pity that our high school calculus education with American calculus education are quite different compared to Chinese's. I searched on zhihu, Bilibili and other public platforms, but failed to find any suitable results. Luckily, I finally figure it out when I went back home during the epidemic.</p>
 <h3 id="stokes-theorem">Stoke's Theorem</h3>
 <p>For surface S in <span class="math inline">\(R^3\)</span> space is an oriented surface in <span class="math inline">\(x,y,z\)</span> coordinate with boundary <span class="math inline">\(\partial S\)</span>. Let <span class="math inline">\(R\)</span> be abounded, open region in <span class="math inline">\(s, t\)</span> plane with smooth boundary <span class="math inline">\(\partial R\)</span> . Suppose that <span class="math inline">\(F\)</span> is a continuously differentiable vector field. <span class="math inline">\(\vec{r}\)</span> is a smooth parametrization that maps <span class="math inline">\(R\)</span> to <span class="math inline">\(S\)</span>, and <span class="math inline">\(\partial R\)</span> to <span class="math inline">\(\partial S\)</span>. Then</p>
 <p><span class="math display">\[
@@ -245,7 +246,95 @@
 \end{array} \right] \,\,: R\rightarrow S. 
 \]</span></p>
 <p>Then.</p>
-
+<p><span class="math display">\[
+d\vec{r}\mid_{\partial R}^{}\,\,=\left[ \begin{matrix}
+    \frac{\partial x}{\partial s}&amp;      \frac{\partial x}{\partial t}\\
+    \frac{\partial y}{\partial s}&amp;      \frac{\partial y}{\partial t}\\
+    \frac{\partial z}{\partial s}&amp;      \frac{\partial z}{\partial t}\\
+\end{matrix} \right] \left[ \begin{array}{c}
+    ds\\
+    dt\\
+\end{array} \right] \,\,=\left[ \begin{array}{c}
+    \frac{\partial x}{\partial s}ds+\frac{\partial x}{\partial t}dt\\
+    \frac{\partial y}{\partial s}ds+\frac{\partial y}{\partial t}dt\\
+    \frac{\partial z}{\partial s}ds+\frac{\partial z}{\partial t}dt\\
+\end{array} \right] \,\,=\left[ \begin{array}{c}
+    \frac{\partial x}{\partial s}\\
+    \frac{\partial y}{\partial s}\\
+    \frac{\partial z}{\partial s}\\
+\end{array} \right] ds+\left[ \begin{array}{c}
+    \frac{\partial x}{\partial t}\\
+    \frac{\partial y}{\partial t}\\
+    \frac{\partial z}{\partial t}\\
+\end{array} \right] dt\,\,=\frac{\partial \vec{r}}{\partial s}ds+\frac{\partial \vec{r}}{\partial t}dt
+\]</span></p>
+<p>Hence.</p>
+<p><span class="math display">\[
+\int_{\partial S}{\vec{F}·}d\vec{r}=\int_{\partial S}{\left( \vec{F}·\frac{\partial \vec{r}}{\partial s}ds+\vec{F}·\frac{\partial \vec{r}}{\partial s} \right)}
+\]</span></p>
+<p>We define a 2-dimensional vector field <span class="math inline">\(G=(G1,G2)\)</span> on the s,t, plane by</p>
+<p><span class="math display">\[
+G_1=\vec{F}\,\,·\,\,\frac{\partial \vec{r}}{\partial s}\,\,  and\,\,  G_2=\vec{F}\,\,·\,\,\frac{\partial \vec{r}}{\partial t}
+\]</span></p>
+<p>Therefore, we put G into the original line integral</p>
+<p><span class="math display">\[
+\int_{\partial S}{\vec{F}\,\,·\,\,d\vec{r}=}\int_{\partial R}{\left( G_1ds+G_2dt \right) =\int_R{\begin{array}{c}
+    \left( \frac{\partial G_2}{\partial s}-\frac{\partial G_1}{\partial t} \right) dsdt\,\,,\\
+\end{array}}\,\,}
+\]</span></p>
+<p><span class="math display">\[
+\int_{\partial S}{\vec{F}\,\,·\,\,d\vec{r}=}\int_{\partial R}{\left( G_1ds+G_2dt \right) \,\,}
+\]</span></p>
+<p>On the other hand.</p>
+<p><span class="math display">\[
+\iint_S{curl\,\,\vec{F}\,\,·\,\,d\vec{S}\,\,=\,\,\iint_R{curl\,\,\vec{F}\mid_{\vec{r}}^{}·\frac{\partial \vec{r}}{\partial s}\times \frac{\partial \vec{r}}{\partial t}dsdt}}
+\]</span></p>
+<p>We expand it, get</p>
+<p><span class="math display">\[
+curl\,\,\vec{F}\mid_{\vec{r}}^{}\cdot \frac{\partial \vec{r}}{\partial s}\times \frac{\partial \vec{r}}{\partial t}\,\,=\,\,\left| \begin{matrix}
+    \frac{\partial F_3}{\partial y}-\frac{\partial F_2}{\partial z}&amp;        \frac{\partial F_1}{\partial z}-\frac{\partial F_3}{\partial x}&amp;        \frac{\partial F_2}{\partial x}-\frac{\partial F_1}{\partial y}\\
+    \frac{\partial x}{\partial s}&amp;      \frac{\partial y}{\partial s}&amp;      \frac{\partial z}{\partial s}\\
+    \frac{\partial x}{\partial t}&amp;      \frac{\partial y}{\partial t}&amp;      \frac{\partial z}{\partial t}\\
+\end{matrix} \right|
+\]</span></p>
+<p><span class="math display">\[
+=\frac{\partial \vec{F}}{\partial s}·\frac{\partial \vec{r}}{\partial t}-\frac{\partial \vec{F}}{\partial t}·\frac{\partial \vec{r}}{\partial s}\,\,=\frac{\partial G_2}{\partial s}-\frac{\partial G_1}{\partial t}
+\]</span></p>
+<p>Hence.</p>
+<p><span class="math display">\[
+\int_R{curl\,\,F\mid_{\vec{r}}^{}\cdot \frac{\partial \vec{r}}{\partial s}}\times \frac{\partial \vec{r}}{\partial t}\,\,dsdt\,\,=\,\,\int_R{\begin{array}{c}
+    \left( \frac{\partial G_2}{\partial s}-\frac{\partial G_1}{\partial t} \right) dsdt\,\,\\
+\end{array}}
+\]</span></p>
+<p>For the line integral part,we have</p>
+<p><span class="math display">\[
+\int_{\partial S}{\vec{F}\,\,·\,\,d\vec{r}=}\int_{\partial R}{\begin{array}{c}
+    \left( G_1ds+G_2dt \right) \,\,\\
+\end{array}}
+\]</span></p>
+<p>Use Green's Theorem, we know</p>
+<p><span class="math display">\[
+\int_{\partial R}{\begin{array}{c}
+    \left( G_1ds+G_2dt \right)\\
+\end{array}}=\int_R{\begin{array}{c}
+    \left( \frac{\partial G_2}{\partial s}-\frac{\partial G_1}{\partial t} \right) dsdt\,\,,\\
+\end{array}}
+\]</span></p>
+<p>So, we can conclude that</p>
+<p><span class="math display">\[
+\int_{\partial S}{\vec{F}·}d\vec{r}=\int_R{\begin{array}{c}
+    \left( \frac{\partial G_2}{\partial s}-\frac{\partial G_1}{\partial t} \right) dsdt=\int_R{curl\,\,F\mid_{\vec{r}}^{}\cdot \frac{\partial \vec{r}}{\partial s}}\times \frac{\partial \vec{r}}{\partial t}\\
+\end{array}}dsdt=\iint_S{curl\,\,F\,\,·\,\,d\vec{S}}
+\]</span></p>
+<p>Thus, we finished our proof of Stokes' Theorem.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Stokes-Theorem/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
