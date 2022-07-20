@@ -883,9 +883,8 @@ mpDraw<span class="token operator">=</span> mp<span class="token punctuation">.<
   <entry>
     <title>Stokes_Theorem</title>
     <url>/Stokes-Theorem/</url>
-    <content><![CDATA[<p>2For surface S in $ R^3 $ space is an oriented surface in x,y,z coordinate with boundary $ \partial S $ . Let R be abounded, open region in s, t, plane with smooth boundary $ \partial R $ . Suppose that $ F $ is a continuously differentiable vector field. $ \vec{r} $ is a smooth parametrization that maps R to S, and $ \partial R to \partial S $. Then</p>
-<script type="math/tex; mode=display">
-1+2=3</script>]]></content>
+    <content><![CDATA[<p>3For surface S in $ R^3 $ space is an oriented surface in x,y,z coordinate with boundary $ \partial S $ . Let R be abounded, open region in s, t, plane with smooth boundary $ \partial R $ . Suppose that $ F $ is a continuously differentiable vector field. $ \vec{r} $ is a smooth parametrization that maps R to S, and $ \partial R to \partial S $. Then</p>
+<script type="math/tex; mode=display">1+2=3</script>]]></content>
   </entry>
   <entry>
     <title>correction1</title>
